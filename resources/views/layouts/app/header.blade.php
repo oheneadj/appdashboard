@@ -1,18 +1,21 @@
-<div class="navbar bg-slate-100 border-b border-slate-100 px-6 h-16 w-full z-10 sticky top-0">
+<div
+    class="navbar bg-slate-100 dark:bg-slate-800 border-b border-slate-100 dark:border-slate-700 px-6 h-16 w-full z-10 sticky top-0">
     <!-- Mobile Toggle -->
     <div class="flex-none lg:hidden mr-2">
         <button id="mobile-menu-button" aria-label="open sidebar"
-            class="btn btn-square btn-ghost btn-sm text-slate-500">
+            class="btn btn-square btn-ghost btn-sm text-slate-500 dark:text-slate-400">
             <span class="icon-[tabler--menu-2] size-6"></span>
         </button>
     </div>
 
     <!-- Search Bar -->
     <div class="flex-1 ">
-        <div class="relative bg-white border-b shadow-sm rounded-lg border-slate-100 w-full max-w-md hidden md:block">
-            <span class="icon-[tabler--search] absolute left-3 top-1/2 -translate-y-1/2 size-5 text-slate-400"></span>
+        <div
+            class="relative bg-white dark:bg-slate-800 border-b shadow-sm rounded-lg border-slate-100 dark:border-slate-700 w-full max-w-md hidden md:block">
+            <span
+                class="icon-[tabler--search] absolute left-3 top-1/2 -translate-y-1/2 size-5 text-slate-400 dark:text-slate-500"></span>
             <input type="text" placeholder="Search [CTRL + K]"
-                class="input input-sm h-10 w-full pl-10 bg-slate-50 border-transparent focus:bg-white focus:border-primary/20 focus:ring-4 focus:ring-primary/5 transition-all rounded-lg placeholder-slate-400 text-sm" />
+                class="input input-sm h-10 w-full pl-10 bg-slate-50 dark:bg-slate-900 border-transparent focus:bg-white dark:focus:bg-slate-800 focus:border-primary/20 focus:ring-4 focus:ring-primary/5 transition-all rounded-lg placeholder-slate-400 dark:placeholder-slate-500 text-sm dark:text-slate-200" />
         </div>
         <button class="btn btn-ghost btn-circle btn-sm md:hidden text-slate-500">
             <span class="icon-[tabler--search] size-5"></span>
@@ -23,20 +26,20 @@
     <div class="flex items-center gap-1 sm:gap-2">
         <!-- Theme Toggle -->
         <button
-            class="btn bg-primary btn-circle btn-sm text-white hover:bg-slate-100 hover:text-primary transition-all duration-200">
+            class="btn bg-primary btn-circle btn-sm text-white hover:bg-slate-100 dark:hover:bg-slate-700 hover:text-primary transition-all duration-200">
             <span class="icon-[tabler--moon] size-5"></span>
         </button>
 
         <!-- Shortcuts (Hidden on mobile) -->
         <button
-            class="btn bg-primary btn-circle btn-sm text-white hover:bg-slate-100 hover:text-primary transition-all duration-200 hidden sm:flex">
+            class="btn bg-primary btn-circle btn-sm text-white hover:bg-slate-100 dark:hover:bg-slate-700 hover:text-primary transition-all duration-200 hidden sm:flex">
             <span class="icon-[tabler--layout-grid] size-5"></span>
         </button>
 
         <!-- Notifications -->
         <div x-data="{ open: false }">
             <button @click="open = !open"
-                :class="open ? 'bg-primary/10 text-primary' : 'text-white hover:bg-slate-100 hover:text-slate-700'"
+                :class="open ? 'bg-primary/10 text-primary' : 'text-white hover:bg-slate-100 dark:hover:bg-slate-700 hover:text-slate-700 dark:hover:text-slate-200'"
                 class="btn bg-primary btn-circle btn-sm transition-all duration-200 relative">
                 <div class="indicator">
                     <span class="icon-[tabler--bell] size-5"></span>
@@ -57,12 +60,12 @@
                 x-transition:enter-start="translate-x-full" x-transition:enter-end="translate-x-0"
                 x-transition:leave="transition ease-in duration-200" x-transition:leave-start="translate-x-0"
                 x-transition:leave-end="translate-x-full"
-                class="fixed top-0 right-0 h-full w-96 max-w-[calc(100vw-3rem)] bg-white shadow-2xl z-50 flex flex-col border-l border-slate-100"
+                class="fixed top-0 right-0 h-full w-96 max-w-[calc(100vw-3rem)] bg-white dark:bg-slate-800 shadow-2xl z-50 flex flex-col border-l border-slate-100 dark:border-slate-700"
                 style="display: none;">
 
                 <!-- Panel Header -->
                 <div
-                    class="flex items-center justify-between p-5 border-b border-slate-100 bg-slate-50/50 flex-shrink-0">
+                    class="flex items-center justify-between p-5 border-b border-slate-100 dark:border-slate-700 bg-slate-50/50 dark:bg-slate-900/50 flex-shrink-0">
                     <div class="flex items-center gap-2">
                         <div class="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center">
                             <span class="icon-[tabler--bell] size-4 text-primary"></span>
@@ -136,7 +139,7 @@
                             class="flex items-start gap-3 p-3 bg-primary/[0.03] hover:bg-primary/[0.06] cursor-pointer transition-colors group border-l-2 border-primary">
                             <div class="avatar placeholder flex-shrink-0">
                                 <div
-                                    class="bg-warning/10 text-warning group-hover:bg-warning group-hover:text-white transition-colors w-10 h-10 rounded-full flex items-center justify-center">
+                                    class="bg-warning/10 text-warning group-hover:bg-warning group-hover:text-white transition-colors w-10 h-10 rounded-full grid place-items-center">
                                     <span class="icon-[tabler--alert-triangle] size-5"></span>
                                 </div>
                             </div>
@@ -199,7 +202,8 @@
                 </div>
 
                 <!-- Panel Footer -->
-                <div class="p-4 border-t border-slate-100 bg-white flex-shrink-0">
+                <div
+                    class="p-4 border-t border-slate-100 dark:border-slate-700 bg-white dark:bg-slate-800 flex-shrink-0">
                     <a href="#"
                         class="block w-full py-2.5 text-center text-sm font-semibold text-primary hover:bg-primary/5 rounded-xl transition-all">
                         View all notifications
@@ -223,32 +227,34 @@
                 x-transition:leave="transition ease-in duration-150"
                 x-transition:leave-start="opacity-100 translate-y-0 scale-100"
                 x-transition:leave-end="opacity-0 translate-y-2 scale-95"
-                class="absolute right-0 top-full mt-3 w-64 bg-white rounded-2xl shadow-2xl shadow-slate-200/50 border border-slate-100 z-50 origin-top-right overflow-hidden transform"
+                class="absolute right-0 top-full mt-3 w-64 bg-white dark:bg-slate-800 rounded-2xl shadow-2xl shadow-slate-200/50 dark:shadow-slate-900/50 border border-slate-100 dark:border-slate-700 z-50 origin-top-right overflow-hidden transform"
                 style="display: none;">
                 <!-- Arrow -->
                 <div
-                    class="absolute top-0 right-4 -mt-2 w-4 h-4 bg-white transform rotate-45 border-l border-t border-slate-100 z-0">
+                    class="absolute top-0 right-4 -mt-2 w-4 h-4 bg-white dark:bg-slate-800 transform rotate-45 border-l border-t border-slate-100 dark:border-slate-700 z-0">
                 </div>
 
-                <div class="relative z-10 bg-white">
-                    <div class="p-5 border-b border-slate-50 bg-slate-50/50">
+                <div class="relative z-10 bg-white dark:bg-slate-800">
+                    <div class="p-5 border-b border-slate-50 dark:border-slate-700 bg-slate-50/50 dark:bg-slate-900/50">
                         <div class="flex items-center gap-3">
                             <div class="w-10 h-10 rounded-full bg-slate-200 overflow-hidden">
                                 <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
                                     alt="User" class="w-full h-full object-cover" />
                             </div>
                             <div class="overflow-hidden">
-                                <p class="font-bold text-slate-800 text-sm truncate">{{ auth()->user()->name }}</p>
-                                <p class="text-xs text-slate-500 truncate">{{ auth()->user()->email }}</p>
+                                <p class="font-bold text-slate-800 dark:text-slate-200 text-sm truncate">
+                                    {{ auth()->user()->name }}</p>
+                                <p class="text-xs text-slate-500 dark:text-slate-400 truncate">
+                                    {{ auth()->user()->email }}</p>
                             </div>
                         </div>
                     </div>
-                    <ul class="p-2 text-sm font-medium text-slate-600">
+                    <ul class="p-2 text-sm font-medium text-slate-600 dark:text-slate-300">
                         <li>
                             <a href="{{ route('profile.edit') }}" wire:navigate
                                 class="flex items-center gap-3 px-3 py-2.5 hover:bg-primary/5 hover:text-primary rounded-xl transition-all group">
                                 <span
-                                    class="icon-[tabler--user] size-4 text-slate-400 group-hover:text-primary transition-colors"></span>
+                                    class="icon-[tabler--user] size-4 text-slate-400 dark:text-slate-500 group-hover:text-primary transition-colors"></span>
                                 {{ __('My Profile') }}
                             </a>
                         </li>

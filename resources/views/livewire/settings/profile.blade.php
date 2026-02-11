@@ -7,7 +7,7 @@
         <form wire:submit="updateProfileInformation" class="my-6 space-y-5">
             <div class="form-control w-full">
                 <label class="mb-2">
-                    <span class="text-sm font-medium text-slate-700">{{ __('Name') }}</span>
+                    <span class="text-sm font-medium text-slate-700 dark:text-slate-200">{{ __('Name') }}</span>
                 </label>
                 <div class="relative">
                     <span class="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400">
@@ -20,7 +20,7 @@
 
             <div class="form-control w-full">
                 <label class="mb-2">
-                    <span class="text-sm font-medium text-slate-700">{{ __('Email') }}</span>
+                    <span class="text-sm font-medium text-slate-700 dark:text-slate-200">{{ __('Email') }}</span>
                 </label>
                 <div class="relative">
                     <span class="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400">

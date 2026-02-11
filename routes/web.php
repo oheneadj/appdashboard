@@ -18,4 +18,16 @@ Route::get('/ecommerce', [App\Http\Controllers\EcommerceController::class, 'inde
     ->middleware(['auth', 'verified'])
     ->name('ecommerce');
 
+Route::get('/users', App\Livewire\Users\Index::class)
+    ->middleware(['auth', 'verified'])
+    ->name('users.index');
+
+Route::get('/users/create', App\Livewire\Users\Create::class)
+    ->middleware(['auth', 'verified'])
+    ->name('users.create');
+
+Route::get('/users/{user}', App\Livewire\Users\Show::class)
+    ->middleware(['auth', 'verified'])
+    ->name('users.show');
+
 require __DIR__.'/settings.php';

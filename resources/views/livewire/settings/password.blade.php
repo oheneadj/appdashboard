@@ -7,7 +7,7 @@
         <form method="POST" wire:submit="updatePassword" class="mt-6 space-y-5">
             <div class="form-control w-full">
                 <label class="mb-2">
-                    <span class="text-sm font-medium text-slate-700">{{ __('Current password') }}</span>
+                    <span class="text-sm font-medium text-slate-700 dark:text-slate-200">{{ __('Current password') }}</span>
                 </label>
                 <div class="relative">
                     <span class="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400">
@@ -20,7 +20,7 @@
 
             <div class="form-control w-full">
                 <label class="mb-2">
-                    <span class="text-sm font-medium text-slate-700">{{ __('New password') }}</span>
+                    <span class="text-sm font-medium text-slate-700 dark:text-slate-200">{{ __('New password') }}</span>
                 </label>
                 <div class="relative">
                     <span class="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400">
@@ -33,7 +33,7 @@
 
             <div class="form-control w-full">
                 <label class="mb-2">
-                    <span class="text-sm font-medium text-slate-700">{{ __('Confirm Password') }}</span>
+                    <span class="text-sm font-medium text-slate-700 dark:text-slate-200">{{ __('Confirm Password') }}</span>
                 </label>
                 <div class="relative">
                     <span class="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400">

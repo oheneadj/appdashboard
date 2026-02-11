@@ -15,7 +15,7 @@
                         </div>
                     </div>
 
-                    <p class="text-slate-500 leading-relaxed">
+                    <p class="text-slate-500 dark:text-slate-400 leading-relaxed">
                         {{ __('With two-factor authentication enabled, you will be prompted for a secure, random pin during login, which you can retrieve from the TOTP-supported application on your phone.') }}
                     </p>
 
@@ -37,7 +37,7 @@
                         </div>
                     </div>
 
-                    <p class="text-slate-500 leading-relaxed">
+                    <p class="text-slate-500 dark:text-slate-400 leading-relaxed">
                         {{ __('When you enable two-factor authentication, you will be prompted for a secure pin during login. This pin can be retrieved from a TOTP-supported application on your phone.') }}
                     </p>
 
@@ -62,13 +62,13 @@
             <div class="space-y-6">
                 <div class="flex flex-col items-center space-y-4">
                     <!-- QR Code -->
-                    <div class="p-4 bg-white rounded-xl border border-slate-100">
+                    <div class="p-4 bg-white dark:bg-slate-800 rounded-xl border border-slate-100 dark:border-slate-700">
                         {!! $qrCodeSvg ?? '' !!}
                     </div>
 
                     <div class="space-y-2 text-center">
-                        <h3 class="text-lg font-bold text-slate-800">{{ $this->modalConfig['title'] }}</h3>
-                        <p class="text-sm text-slate-500">{{ $this->modalConfig['description'] }}</p>
+                        <h3 class="text-lg font-bold text-slate-800 dark:text-slate-100">{{ $this->modalConfig['title'] }}</h3>
+                        <p class="text-sm text-slate-500 dark:text-slate-400">{{ $this->modalConfig['description'] }}</p>
                     </div>
                 </div>
 

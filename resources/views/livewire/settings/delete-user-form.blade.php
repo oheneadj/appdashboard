@@ -1,11 +1,11 @@
-<section class="mt-8 pt-6 border-t border-slate-200 space-y-4">
+<section class="mt-8 pt-6 border-t border-slate-200 dark:border-slate-700 space-y-4">
     <div class="flex items-start gap-3">
         <div class="w-9 h-9 rounded-xl bg-red-50 flex items-center justify-center shrink-0 mt-0.5">
             <span class="icon-[tabler--alert-triangle] size-[18px] text-red-500"></span>
         </div>
         <div>
-            <h3 class="text-base font-bold text-slate-800">{{ __('Delete account') }}</h3>
-            <p class="text-sm text-slate-500 mt-0.5">
+            <h3 class="text-base font-bold text-slate-800 dark:text-slate-100">{{ __('Delete account') }}</h3>
+            <p class="text-sm text-slate-500 dark:text-slate-400 mt-0.5">
                 {{ __('Permanently delete your account and all associated data. This action cannot be undone.') }}</p>
         </div>
     </div>
@@ -28,16 +28,16 @@
                     <div class="w-10 h-10 rounded-full bg-red-100 flex items-center justify-center">
                         <span class="icon-[tabler--alert-triangle] size-5 text-red-500"></span>
                     </div>
-                    <h3 class="text-lg font-bold text-slate-800">{{ __('Delete your account?') }}</h3>
+                    <h3 class="text-lg font-bold text-slate-800 dark:text-slate-100">{{ __('Delete your account?') }}</h3>
                 </div>
 
-                <p class="text-sm text-slate-500 leading-relaxed">
+                <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
                     {{ __('Once your account is deleted, all of its resources and data will be permanently deleted. Please enter your password to confirm.') }}
                 </p>
 
                 <div class="form-control w-full">
                     <label class="mb-2">
-                        <span class="text-sm font-medium text-slate-700">{{ __('Password') }}</span>
+                        <span class="text-sm font-medium text-slate-700 dark:text-slate-200">{{ __('Password') }}</span>
                     </label>
                     <div class="relative">
                         <span class="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400">
