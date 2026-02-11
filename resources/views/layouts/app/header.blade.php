@@ -77,7 +77,7 @@
                             class="text-xs text-primary font-semibold hover:text-primary/70 transition-colors px-2 py-1 rounded-lg hover:bg-primary/5">Mark
                             all read</button>
                         <button @click="open = false"
-                            class="btn btn-ghost btn-circle btn-sm text-slate-400 hover:text-slate-600 hover:bg-slate-100">
+                            class="btn btn-primary btn-circle btn-sm text-white hover:text-primary hover:bg-primary/10">
                             <span class="icon-[tabler--x] size-5"></span>
                         </button>
                     </div>
@@ -90,14 +90,14 @@
                         <p class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Today</p>
                     </div>
 
-                    <div class="px-3 space-y-1">
+                    <div class="px-3">
                         <!-- Unread notification -->
                         <div
-                            class="flex items-start gap-3 p-3 bg-primary/[0.03] hover:bg-primary/[0.06] rounded-xl cursor-pointer transition-colors group border-l-2 border-primary">
+                            class="flex items-start gap-3 p-3 bg-primary/[0.03] hover:bg-primary/[0.06] cursor-pointer transition-colors group border-l-2 border-primary">
                             <div class="avatar placeholder flex-shrink-0">
                                 <div
-                                    class="bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors w-10 h-10 rounded-full flex items-center justify-center">
-                                    <span class="text-xs font-bold">JD</span>
+                                    class="bg-primary/10 flex items-center justify-center text-primary rounded-full group-hover:bg-primary group-hover:text-white transition-colors w-10 h-10 rounded flex items-center justify-center">
+                                    <span class="text-xs mx-auto inline-block font-bold">JD</span>
                                 </div>
                             </div>
                             <div class="flex-1 min-w-0">
@@ -113,7 +113,7 @@
 
                         <!-- Unread notification -->
                         <div
-                            class="flex items-start gap-3 p-3 bg-primary/[0.03] hover:bg-primary/[0.06] rounded-xl cursor-pointer transition-colors group border-l-2 border-primary">
+                            class="flex items-start gap-3 p-3 bg-primary/[0.03] hover:bg-primary/[0.06] cursor-pointer transition-colors group border-l-2 border-primary">
                             <div class="avatar placeholder flex-shrink-0">
                                 <div
                                     class="bg-success/10 text-success group-hover:bg-success group-hover:text-white transition-colors w-10 h-10 rounded-full flex items-center justify-center">
@@ -133,7 +133,7 @@
 
                         <!-- Unread notification -->
                         <div
-                            class="flex items-start gap-3 p-3 bg-primary/[0.03] hover:bg-primary/[0.06] rounded-xl cursor-pointer transition-colors group border-l-2 border-primary">
+                            class="flex items-start gap-3 p-3 bg-primary/[0.03] hover:bg-primary/[0.06] cursor-pointer transition-colors group border-l-2 border-primary">
                             <div class="avatar placeholder flex-shrink-0">
                                 <div
                                     class="bg-warning/10 text-warning group-hover:bg-warning group-hover:text-white transition-colors w-10 h-10 rounded-full flex items-center justify-center">
@@ -160,7 +160,7 @@
                     <div class="px-3 space-y-1 pb-4">
                         <!-- Read notification -->
                         <div
-                            class="flex items-start gap-3 p-3 hover:bg-slate-50 rounded-xl cursor-pointer transition-colors group">
+                            class="flex items-start gap-3 p-3 hover:bg-slate-50 cursor-pointer transition-colors group">
                             <div class="avatar placeholder flex-shrink-0">
                                 <div
                                     class="bg-slate-100 text-slate-500 w-10 h-10 rounded-full flex items-center justify-center">
@@ -179,7 +179,7 @@
 
                         <!-- Read notification -->
                         <div
-                            class="flex items-start gap-3 p-3 hover:bg-slate-50 rounded-xl cursor-pointer transition-colors group">
+                            class="flex items-start gap-3 p-3 hover:bg-slate-50 cursor-pointer transition-colors group">
                             <div class="avatar placeholder flex-shrink-0">
                                 <div
                                     class="bg-slate-100 text-slate-500 w-10 h-10 rounded-full flex items-center justify-center">
