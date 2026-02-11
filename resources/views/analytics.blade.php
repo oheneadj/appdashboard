@@ -21,7 +21,6 @@
         </div>
 
         <!-- Metric Cards -->
-        <!-- Metric Cards -->
         <div class="card bg-white shadow-sm border border-slate-100">
             <div class="card-body p-0">
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 divide-y lg:divide-y-0 lg:divide-x divide-slate-100">
